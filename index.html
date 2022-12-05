@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
   <title>AwesomeBooks</title>
+  <link rel="stylesheet" href="index.css">
 </head>
-<body>
 
-  <script src="js/index.js"></script>
+<body>
+  <nav>
+    <p>Awesome Books</p>
+    <ul>
+      <a href="#" id="showListBtn">List</a>
+      <hr>
+      <a href="#" id="addNewBtn">Add New</a>
+      <hr>
+      <a href="#" id="contactBtn">Contact</a>
+    </ul>
+  </nav>
+  <p id="dateDisplay" class="dateDisplay"></p>
+  <sections id="sections">
+    <section id="listBooks">
+      <h2>All awesome books</h1>
+        <div id="books"></div>
+    </section>
+
+    <section id="addBook">
+      <h2>Add a new book</h2>
+      <div class="form">
+        <input id="addTitleInput" type="text" placeholder="title">
+        <input id="addAuthorInput" type="text" placeholder="Author">
+        <button id="addBtn" type="submit">Add</button>
+      </div>
+    </section>
+
+    <section id="contactInfo">
+      <h2>Contact information</h2>
+      <div class="info">
+        <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+        <ul>
+          <li>Our email: mail@mail.com</li>
+          <li>Our phone number: 0043586534422</li>
+          <li>Our address: Streetname 22, 84503 City, Country</li>
+        </ul>
+      </div>
+    </section>
+  </sections>
+  <footer>
+    <p>Copyright &copy; All right reserved 2022</p>
+  </footer>
+  <script src="index.js "></script>
 </body>
+
 </html>
