@@ -1,6 +1,5 @@
-
 export const addItemHtml = (book, index) => {
-  const btnId = `removeBtn${index}` 
+  const btnId = `removeBtn${index}`;
   const child = `
   <section class="book">
     <p>"${book.title}" by ${book.author}</p>

@@ -1,4 +1,4 @@
-export class BookStorage {
+export default class BookStorage {
   addBook = (newBook) => {
     let books = JSON.parse(localStorage.getItem('allEntries'));
     if (books == null) books = [];

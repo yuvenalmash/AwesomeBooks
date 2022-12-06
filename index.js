@@ -1,8 +1,8 @@
-import { setLuxonTime } from "./modules/setTime.js";
-import { Book } from "./modules/book.js";
-import { BookStorage } from "./modules/bookStorage.js";
-import { showList, showAddBook, showContact } from "./modules/navigation.js"
-import { addItemHtml, clearListDiv } from "./modules/ui.js";
+import { setLuxonTime } from './modules/setTime.js';
+import Book from './modules/book.js';
+import BookStorage from './modules/bookStorage.js';
+import { showList, showAddBook, showContact } from './modules/navigation.js';
+import { addItemHtml, clearListDiv } from './modules/ui.js';
 
 // list books
 const listBooks = () => {
@@ -34,7 +34,7 @@ const remove = (index) => {
   listBooks();
 };
 
-window.remove = remove
+window.remove = remove;
 
 setInterval(setLuxonTime, 1000);
 document.querySelector('#showListBtn').addEventListener('click', showList);
