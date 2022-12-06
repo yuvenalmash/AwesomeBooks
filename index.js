@@ -1,9 +1,8 @@
-import { setTime } from "./modules/setTime.js";
+import { setLuxonTime } from "./modules/setTime.js";
 import { Book } from "./modules/book.js";
 import { BookStorage } from "./modules/bookStorage.js";
 import { showList, showAddBook, showContact } from "./modules/navigation.js"
 import { addItemHtml, clearListDiv } from "./modules/ui.js";
-
 
 // list books
 const listBooks = () => {
@@ -37,8 +36,7 @@ const remove = (index) => {
 
 window.remove = remove
 
-
-setInterval(setTime, 1000);
+setInterval(setLuxonTime, 1000);
 document.querySelector('#showListBtn').addEventListener('click', showList);
 document.querySelector('#addNewBtn').addEventListener('click', showAddBook);
 document.querySelector('#contactBtn').addEventListener('click', showContact);
